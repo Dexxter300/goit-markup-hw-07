@@ -17,7 +17,7 @@
     <link href="
         https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
         " rel="stylesheet">
-    </link>
+    <!-- </link> -->
     <!-- Styles -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -65,9 +65,9 @@
                 <use href="./images/icons.svg#menu"></use>
               </svg>
             </button>
-            </header>
-            <main>
       </div>
+    </header>
+  <main>
       <!-- Hero section -->
       <section class="hero-section">
         <div class="hero-container container">
@@ -145,7 +145,7 @@
                 "
               />
             <img
-              src="./images/rectangle71_desk@1x-2.jpg 2x"
+              src="./images/rectangle71_desk@1x-2.jpg"
               alt="computer monitor"
               width="360"
               height="300"
@@ -424,7 +424,7 @@
               </a>
             </li>
             <li class="customers-item">
-                <a class="customer-link link ani-hov" href="" target="_blank" rel="noopener noreferrer" aaria-label="company link">
+                <a class="customer-link link ani-hov" href="" target="_blank" rel="noopener noreferrer" aria-label="company link">
                   <svg class="custom-svg" width="104" height="56">
                     <use href="./images/icons.svg#group-2"></use>
                   </svg>
@@ -578,65 +578,64 @@
 
 <!-- Mobile menu -->
 <div class="menu-container js-menu-container" id="mobile-menu">
-  <button class="menu-toggle js-close-menu">
-    <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
-      <path fill-rule="evenodd"
-        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-        clip-rule="evenodd"></path>
-    </svg>
+  <button type="button" class="menu-toggle js-close-menu">
+          <svg class="modal-icon" width="8" height="8">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
   </button>
 
   <ul class="mobile-menu">
     <li>
-      <a href="" class="link">About</a>
+      <a href="" class="menu-link link ani-hov">Studio</a>
     </li>
     <li>
-      <a href="" class="link">Products</a>
+      <a href="" class="menu-link link ani-hov">Portfolio</a>
     </li>
     <li>
-      <a href="" class="link">Contacts</a>
+      <a href="" class="menu-link link ani-hov">Contacts</a>
     </li>
   </ul>
 
-  <ul class="mobile-contacts">
+  <ul class="mobile-contacts list">
     <li>
-      <a href="" class="link">+11 (000) 111-11-11</a>
+      <a href="tel:+110001111111" class="menu-contacts big-tel link ani-hov">+11 (000) 111-11-11</a>
     </li>
     <li>
-      <a href="" class="link">info@devstudio.com</a>
+      <a href="mail:info@devstudio.com" class="menu-contacts link ani-hov">info@devstudio.com</a>
     </li>
   </ul>
 
-  <ul class="mobile-socials">
-    <li>
-      <a href="" class="link">
-        <svg class="mobile-socials-icon">
-          <use></use>
-        </svg>
-      </a>
-    </li>
-    <li>
-      <a href="" class="link">
-        <svg class="mobile-socials-icon">
-          <use></use>
-        </svg>
-      </a>
-    </li>
-    <li>
-      <a href="" class="link">
-        <svg class="mobile-socials-icon">
-          <use></use>
-        </svg>
-      </a>
-    </li>
-    <li>
-      <a href="" class="link">
-        <svg class="mobile-socials-icon">
-          <use></use>
-        </svg>
-      </a>
-    </li>
-  </ul>
+<ul class="menu-media-list list">
+  <li class="media-item">
+    <a class="menu-media link ani-hov" href="https://www.instagram.com/dexxter300/" target="_blank"
+      rel="noopener noreferrer" aria-label="instagram link">
+      <svg class="media-svg" width="24" height="24">
+        <use href="./images/icons.svg#instagram"></use>
+      </svg>
+    </a>
+  </li>
+  <li class="media-item">
+    <a class="menu-media link ani-hov" href="" target="_blank" rel="noopener noreferrer" aria-label="twitter link">
+      <svg class="media-svg" width="24" height="24">
+        <use href="./images/icons.svg#twitter"></use>
+      </svg>
+    </a>
+  </li>
+  <li class="media-item">
+    <a class="menu-media link ani-hov" href="" target="_blank" rel="noopener noreferrer" aria-label="facebook link">
+      <svg class="media-svg" width="24" height="24">
+        <use href="./images/icons.svg#facebook"></use>
+      </svg>
+    </a>
+  </li>
+  <li class="media-item">
+    <a class="menu-media link ani-hov" href="" target="_blank" rel="noopener noreferrer" aria-label="linkedin link">
+      <svg class="media-svg" width="24" height="24">
+        <use href="./images/icons.svg#linkedin"></use>
+      </svg>
+    </a>
+  </li>
+</ul>
 </div>
     
     <script src="./js/modal.js"></script>
