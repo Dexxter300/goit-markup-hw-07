@@ -1255,11 +1255,11 @@ footer {
   font-size: 20px;
   line-height: 1.2;
 }
-.media-item:not(:last-child) {
-  /* display: flex; */
+/* .media-item:not(:last-child) {
+  display: flex;
   margin-right: auto;
   
-}
+} */
 .menu-media {
   display: flex;
   align-items: center;
